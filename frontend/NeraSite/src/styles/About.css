@@ -1,0 +1,65 @@
+.heroAbout-section {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  border-radius: 12px;
+  background-color: rgb(255, 233, 215);
+  background-image: url("https://img.magnific.com/premium-photo/ethereal-ocean-depths_1217138-375.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.deco-image {
+  flex: 2;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.heroAbout-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.heroAbout-description {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.heroAbout-content .welcomeAbout-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Arial", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .heroAbout-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .deco-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}

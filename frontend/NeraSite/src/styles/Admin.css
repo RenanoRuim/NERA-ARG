@@ -1,0 +1,346 @@
+.admin-page {
+  min-height: 100vh;
+
+  background: #080b0d;
+
+  color: #dce5e6;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-header {
+  max-width: 1200px;
+
+  margin: 0 auto 40px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #263337;
+}
+
+.admin-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+
+  letter-spacing: 4px;
+
+  font-weight: 500;
+}
+
+.admin-header p {
+  margin-top: 8px;
+
+  color: #718085;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+.system-status {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #6fa3a8;
+}
+
+.admin-nav {
+  max-width: 1200px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.admin-nav a {
+  padding: 10px 16px;
+
+  border: 1px solid #29363a;
+
+  background: #0d1214;
+
+  color: #879599;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  transition: 0.2s;
+}
+
+.admin-nav a:hover {
+  border-color: #6fa3a8;
+
+  color: #dce5e6;
+
+  background: #11191b;
+}
+
+.admin-section {
+  max-width: 1200px;
+
+  margin: 0 auto 40px;
+}
+.document-card {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.document-card:hover {
+  transform: scale(1.02);
+}
+
+.documento-modal {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  padding: 30px;
+}
+
+.documento-expandido {
+  position: relative;
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  background: white;
+  padding: 10px;
+
+  overflow: auto;
+}
+
+.documento-expandido img {
+  display: block;
+
+  max-width: 100%;
+  max-height: 85vh;
+
+  width: auto;
+  height: auto;
+}
+
+.fechar-documento {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #111;
+  color: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.fechar-documento:hover {
+  background: #333;
+}
+
+.admin-section h2 {
+  margin-bottom: 20px;
+
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #202b2f;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  color: #aababc;
+}
+
+.document-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 18px;
+}
+
+.document-card {
+  position: relative;
+
+  padding: 24px;
+
+  min-height: 150px;
+
+  box-sizing: border-box;
+
+  background: #101619;
+
+  border: 1px solid #263338;
+
+  transition: 0.2s;
+
+  cursor: pointer;
+}
+
+.document-card:hover {
+  border-color: #6fa3a8;
+
+  background: #121b1d;
+
+  transform: translateY(-2px);
+}
+
+.document-card span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #657479;
+}
+
+.document-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  color: #dce5e6;
+}
+
+.document-card p {
+  margin: 0;
+
+  color: #748287;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+.access-level {
+  display: inline-block;
+
+  padding: 7px 10px;
+
+  border: 1px solid #344448;
+
+  background: #0b1012;
+
+  color: #6fa3a8;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.document-page {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  background: #101619;
+
+  border: 1px solid #263338;
+}
+
+.document-page h1 {
+  margin-top: 0;
+
+  font-size: 24px;
+
+  font-weight: 500;
+
+  letter-spacing: 3px;
+}
+
+.document-page .document-meta {
+  margin-bottom: 30px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #293438;
+
+  color: #647277;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+.document-content {
+  color: #aeb9bb;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.classified-warning {
+  padding: 15px;
+
+  margin-bottom: 25px;
+
+  border: 1px solid #4b3838;
+
+  background: #171011;
+
+  color: #a97979;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+  .admin-page {
+    padding: 20px;
+  }
+
+  .admin-header h1 {
+    font-size: 21px;
+
+    letter-spacing: 3px;
+  }
+
+  .document-page {
+    padding: 25px;
+  }
+}
