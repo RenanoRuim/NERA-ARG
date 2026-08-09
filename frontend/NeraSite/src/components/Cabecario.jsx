@@ -1,6 +1,6 @@
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logoNERA.png";
+import Logo from "../assets/LogoNERA.png";
 
 export default function Cabecario() {
   return (
