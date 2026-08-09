@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const authRouter = require("./routes/auth");
 const noticiasRouter = require("./routes/noticias");
+require("dotenv").config();
 
 const app = express();
 
