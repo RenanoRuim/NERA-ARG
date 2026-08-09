@@ -14,7 +14,7 @@ export default function Login() {
     setErro("");
 
     try {
-      const resposta = await fetch("http://localhost:3000/api/login", {
+      const resposta = await fetch("https://nera-arg.onrender.com/api/login", {
         method: "POST",
 
         headers: {

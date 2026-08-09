@@ -10,7 +10,9 @@ export default function Noticias() {
   useEffect(() => {
     async function carregarNoticias() {
       try {
-        const resposta = await axios.get("http://localhost:3000/api/noticias");
+        const resposta = await axios.get(
+          "https://nera-arg.onrender.com/api/noticias",
+        );
         setNoticias(resposta.data);
       } catch (err) {
         console.error("Erro ao buscar notícias:", err);
