@@ -1,7 +1,8 @@
-//import { useState } from 'react'
 import "./styles/App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Pesquisas from "./pages/Pesquisas";
+import CentroODS from "./pages/CentroODS";
 import Login from "./pages/Login";
 import AdminHome from "./pages/admin/AdminHome";
 import AdminLayout from "./pages/admin/AdminLayout";
@@ -20,24 +21,25 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/pesquisas" element={<Pesquisas />} />
+        <Route path="/centro-ods14" element={<CentroODS />} />
+        <Route path="/nera-education" element={<CentroODS />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<AdminHome />} />
 
-          <Route element={<ProtectedRoute nivelMinimo={1} />}>
+        <Route element={<ProtectedRoute nivelMinimo={1} />}>
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<AdminHome />} />
             <Route path="pesquisadores" element={<Pesquisadores />} />
-
             <Route path="relatorios" element={<Relatorios />} />
-          </Route>
 
-          <Route element={<ProtectedRoute nivelMinimo={2} />}>
-            <Route path="incidentes" element={<Incidentes />} />
+            <Route element={<ProtectedRoute nivelMinimo={2} />}>
+              <Route path="incidentes" element={<Incidentes />} />
+              <Route path="organismo" element={<Organismo />} />
+            </Route>
 
-            <Route path="organismo" element={<Organismo />} />
-          </Route>
-
-          <Route element={<ProtectedRoute nivelMinimo={3} />}>
-            <Route path="thalassa" element={<Thalassa />} />
+            <Route element={<ProtectedRoute nivelMinimo={3} />}>
+              <Route path="thalassa" element={<Thalassa />} />
+            </Route>
           </Route>
         </Route>
       </Routes>

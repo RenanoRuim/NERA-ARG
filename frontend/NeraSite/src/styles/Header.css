@@ -1,79 +1,234 @@
-.cabecario {
+.inst-header {
   width: 100%;
-  padding: 0 24px;
-  background-image: linear-gradient(to right, #002b86, #0041a3, #00e1ff);
-  border-bottom: 1px solid #00d9ff;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--border-strong);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
+.inst-topbar {
+  background-color: var(--navy-deep);
+  color: #d5d1c5;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.inst-topbar-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 6px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  box-sizing: border-box;
-  min-height: 64px;
-  border-radius: 0 0 10px 10px;
+  gap: 12px;
 }
 
-.cabecario-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+.telemetry-Group {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.telemetry-coord {
+  color: #94a3b8;
+}
+
+.telemetry-badge.alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #fbbf24;
+  display: inline-block;
+}
+
+.telemetry-divider {
+  color: #475569;
+}
+
+.telemetry-item strong {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.intranet-btn {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.intranet-btn:hover {
+  background: #38bdf8;
+  color: #08121e;
+}
+
+/* Barra Principal Estilo Periódico Científico */
+.cabecario {
+  width: 100%;
+  background: var(--card-bg);
+}
+
+.cabecario-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+  padding: 12px 24px 12px 0;
+  border-right: 1px solid var(--border);
+}
+
+.brand-emblem {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.nera-svg-logo {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.brand-acronym {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--navy-deep);
+  line-height: 1;
+}
+
+.brand-doc-code {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  background: var(--bg);
+}
+
+.brand-fullname {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .cabecario-nav {
   display: flex;
-  gap: 12px;
-  align-items: center;
+  align-items: stretch;
 }
 
-.cabecario-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 16px;
-  background-image: linear-gradient(to right, #1100ff, #0041a3);
-  border-radius: 6px;
-  text-align: center;
+.cabecario-nav .nav-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
+  gap: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  font-weight: 500;
+  padding: 0 18px;
+  border-left: 1px solid var(--border-subtle);
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.cabecario-nav a:hover {
+.nav-idx {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.cabecario-nav .nav-link:hover {
+  background-color: var(--bg);
+  color: var(--navy-deep);
+}
+
+.cabecario-nav .nav-link.active {
+  background-color: var(--bg-alt);
+  color: var(--navy-deep);
+  font-weight: 600;
+  box-shadow: inset 0 -3px 0 var(--navy-deep);
+}
+
+.cabecario-nav .nav-edu-highlight .nav-idx {
+  color: var(--teal-accent);
+  font-weight: 700;
+}
+
+.cabecario-nav .nav-login-cta {
+  background-color: var(--navy-deep);
+  color: #faf9f5;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  border-left: 1px solid var(--navy-deep);
+}
+
+.cabecario-nav .nav-login-cta:hover {
+  background-color: var(--teal-accent);
   color: #ffffff;
-  background-image: linear-gradient(to right, #0172f3, #0400ff);
-  box-shadow:
-    inset 0 0 8px #1100a8,
-    0 0 10px rgba(0, 52, 163, 0.6);
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-  font-weight: bold;
 }
 
-@media (max-width: 640px) {
-  .cabecario {
-    padding: 12px 16px;
-    flex-direction: column;
-    gap: 12px;
-    height: auto;
+@media (max-width: 1024px) {
+  .hide-mobile {
+    display: none;
   }
 
-  .cabecario-logo {
-    font-size: 20px;
+  .cabecario-inner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .brand-link {
+    padding: 12px 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
   }
 
   .cabecario-nav {
-    width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
   }
 
-  .cabecario-nav a {
-    font-size: 13px;
-    padding: 6px 12px;
-    flex: 1;
-    min-width: 80px;
+  .cabecario-nav .nav-link {
+    padding: 10px 14px;
+    flex: 1 1 auto;
+    border-bottom: 1px solid var(--border-subtle);
   }
 }

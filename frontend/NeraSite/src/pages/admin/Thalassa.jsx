@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import documento2 from "../../assets/documento2.jpg";
 
 export default function Thalassa() {
@@ -9,7 +10,8 @@ export default function Thalassa() {
   return (
     <section className="admin-section">
       <div className="classified-warning">
-        AVISO: AUTORIZAÇÃO DE NÍVEL 3 NECESSÁRIA
+        AVISO: AUTORIZAÇÃO DE NÍVEL 3 NECESSÁRIA // ACESSO CONCEDIDO A:
+        RYAN_MICHAEL (PROTOCOLO 2412a)
       </div>
 
       <h2>PROJETO TALASSA</h2>
@@ -17,7 +19,7 @@ export default function Thalassa() {
       <div className="document-page">
         <div className="document-meta">
           DOCUMENT: TAL-0001 <br />
-          CLASSIFICATION: TOP SECRET
+          CLASSIFICATION: TOP SECRET // NERA-NET ARCHIVE
         </div>
         <div className="document-content">
           <h3>PROJETO TALASSA</h3>
@@ -79,67 +81,39 @@ export default function Thalassa() {
             finais do projeto encontram-se indisponíveis.
           </p>
           <br />
-          <p>
+          <p className="corrupted-transmission">
             <strong>%$%A chuva</strong> cairá sobre nós. O mar tomará o que
             deixamos para trás. E quando tudo estiver submerso, restará apenas
             uma pergunta: nós destruímos o oceano… ou apenas ensinamos a ele
             como nos destruir? @$%#%$¨%@#$$$$%$##@#@$%@¨@FR%T¨W$DF$%RTW%
           </p>
           <br />
-          <h1>CLIQUE NO DOCUMENTO</h1>
-          <article className="document-card" onClick={() => abrirVideo()}>
-            <img src={documento2} alt="Documento 2" style={{ width: "100%" }} />
-          </article>
-          <section className="secao-reflexao">
-            <h2>
-              Reflexão: O oceano nos deu a vida. Cuidar dele ainda é uma escolha
-              🌊
-            </h2>
+
+          <div className="thalassa-attachment-box">
+            <span className="attachment-label">
+              [ ANEXO DE EVIDÊNCIA CRIPTOGRAFADA // REGISTRO DE VÍDEO VINCULADO ]
+            </span>
+            <h1>CLIQUE NO DOCUMENTO</h1>
+            <article className="document-card" onClick={() => abrirVideo()}>
+              <img
+                src={documento2}
+                alt="Documento 2"
+                style={{ width: "100%" }}
+              />
+            </article>
+          </div>
+
+          <div className="thalassa-ods-bridge">
+            <span>ARQUIVO EXTERNO DE IMPACTO AMBIENTAL (ODS-14)</span>
             <p>
-              você ainda acha isso certo? O que você faria se tivesse a chance
-              de mudar o rumo da história? O que você faria se tivesse a chance
-              de salvar vidas? O que você faria se tivesse a chance de salvar o
-              planeta? Refletir sobre nossas ações e suas consequências é
-              essencial para construir um futuro mais consciente e sustentável.
-              O oceano é um recurso vital para a vida na Terra, e sua
-              preservação deve ser uma prioridade para todos nós.
+              Os registros audiovisuais de conscientização ambiental e poluição
+              dos oceanos estão disponíveis publicamente no Centro de
+              Conhecimento da N.E.R.A.
             </p>
-
-            <div className="video-responsive">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/4l7Jns0u9Sg"
-                title="Plástico nos oceanos"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-
-            <div className="video-responsive">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/tVMe8baPGDA?si=eevCWqwOlpRie9pT"
-                title="Plástico nos oceanos"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="video-responsive">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/5X_0xACN_48?si=I-Kcs4jqYnuBM8Mc"
-                title="Plástico nos oceanos"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </section>
+            <Link to="/centro-ods14" className="admin-ctrl-btn">
+              ACESSAR CENTRO DE CONHECIMENTO ODS-14 →
+            </Link>
+          </div>
         </div>
       </div>
     </section>

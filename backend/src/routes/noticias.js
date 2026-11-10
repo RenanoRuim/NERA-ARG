@@ -1,5 +1,5 @@
 const express = require("express");
-const lerRss = require("../components/leitorRss");
+const lerRss = require("../services/leitorRss");
 
 const router = express.Router();
 

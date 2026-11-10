@@ -152,3 +152,41 @@ RSS Parser
 Git
 GitHub
 Visual Studio Code
+
+## 🗂️ Estrutura do projeto
+
+```text
+NERA-ARG/
+├── frontend/
+│   └── NeraSite/          aplicação React + Vite
+│       └── src/
+│           ├── assets/
+│           ├── components/
+│           ├── pages/admin/
+│           └── styles/
+└── backend/               API Express
+    └── src/
+        ├── routes/        endpoints de login e notícias
+        └── services/      integração com fontes RSS
+```
+
+## ▶️ Executar localmente
+
+Em dois terminais, instale as dependências e inicie cada aplicação:
+
+```sh
+cd backend
+npm ci
+npm run dev
+```
+
+```sh
+cd frontend/NeraSite
+npm ci
+npm run dev
+```
+
+O backend usa a porta `3000` por padrão; `PORT` pode ser definido no ambiente.
+O frontend atualmente usa a URL de produção para chamar a API, portanto login e
+notícias em desenvolvimento dependem desse serviço remoto até a URL ser
+configurada por ambiente.

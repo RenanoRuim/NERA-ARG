@@ -1,4 +1,4 @@
-const lerRss = require("./components/leitorRss");
+const lerRss = require("./services/leitorRss");
 
 async function testar() {
   try {

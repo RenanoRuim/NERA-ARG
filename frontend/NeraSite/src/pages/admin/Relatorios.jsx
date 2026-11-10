@@ -5,6 +5,7 @@ export default function Relatorios() {
 
       <div className="document-grid">
         <article className="document-card">
+          <span>DOC REL-001 // MONITORAMENTO ABISSAL</span>
           <h3>Relatório Ambiental</h3>
 
           <p>
@@ -21,6 +22,7 @@ export default function Relatorios() {
         </article>
 
         <article className="document-card">
+          <span>DOC REL-002 // TELEMETRIA DE PROFUNDIDADE</span>
           <h3>Monitoramento Oceânico</h3>
 
           <p>
@@ -34,7 +36,9 @@ export default function Relatorios() {
             análises.
           </p>
         </article>
+
         <article className="document-card">
+          <span>DOC REL-003 // ENSAIOS PRELIMINARES</span>
           <h3>Análise Biológica</h3>
 
           <p>
@@ -48,7 +52,9 @@ export default function Relatorios() {
             sua origem e composição.
           </p>
         </article>
+
         <article className="document-card">
+          <span>DOC REL-004 // EXPEDIÇÃO SETOR-14</span>
           <h3>Relatório de Expedição</h3>
 
           <p>
@@ -63,7 +69,9 @@ export default function Relatorios() {
             laboratório.
           </p>
         </article>
+
         <article className="document-card">
+          <span>DOC REL-005 // DIRETRIZ DE CONTENÇÃO</span>
           <h3>Relatório de Segurança</h3>
 
           <p>
@@ -77,12 +85,17 @@ export default function Relatorios() {
             conclusão das avaliações internas.
           </p>
         </article>
-        <article className="document-card">
+
+        <article className="document-card corrupted-card">
+          <span>
+            DOC REL-006 // ALERTA DE EVASÃO — PESQUISADOR #004 (RAFAEL MENDES)
+          </span>
           <h3>Relatório de Segurança</h3>
           <p>
-            O Dr. R*** M******, responsável pela engenharia genética do projeto,
+            O Dr. R*** M****** (Rafael Mendes, registro #004), responsável pela
+            engenharia de contenção e sistemas de bioisolamento do projeto,
             abandonou o laboratório após a identificação de alterações incomuns
-            em uma das amostras.
+            em uma das amostras e falhas críticas no tanque principal.
           </p>
           <br />
           <p>

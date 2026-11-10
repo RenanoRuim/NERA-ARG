@@ -5,6 +5,7 @@ export default function Incidentes() {
 
       <div className="document-grid">
         <article className="document-card">
+          <span>REGISTRO INC-001 // BIO-SEGURANÇA</span>
           <h3>Acidente com Funcionário</h3>
 
           <p>
@@ -38,7 +39,9 @@ export default function Incidentes() {
             pesquisa para análise.
           </p>
         </article>
+
         <article className="document-card">
+          <span>REGISTRO INC-002 // ENGENHARIA DE CONTENÇÃO</span>
           <h3>Falha no Sistema de Contenção</h3>
 
           <p>
@@ -57,7 +60,9 @@ export default function Incidentes() {
             análise.
           </p>
         </article>
+
         <article className="document-card">
+          <span>REGISTRO INC-003 // DATA: 24/12 (ANEXO: a)</span>
           <h3>Queda de Energia</h3>
 
           <p>
@@ -76,7 +81,9 @@ export default function Incidentes() {
             técnica.
           </p>
         </article>
+
         <article className="document-card">
+          <span>REGISTRO INC-004 // CONTAMINAÇÃO DIRETA</span>
           <h3>Exposição Acidental</h3>
           <br />
           <p>
@@ -95,7 +102,9 @@ export default function Incidentes() {
             descontaminação e análise do material.
           </p>
         </article>
+
         <article className="document-card">
+          <span>REGISTRO INC-005 // ANOMALIA DE AMOSTRA</span>
           <h3>Comportamento Inesperado da Amostra</h3>
 
           <p>
@@ -116,7 +125,9 @@ export default function Incidentes() {
             contenção.
           </p>
         </article>
+
         <article className="document-card">
+          <span>REGISTRO INC-006 // PRONTUÁRIO #09</span>
           <h3>Recuperação Incomum</h3>
 
           <p>
@@ -142,7 +153,9 @@ export default function Incidentes() {
             sobre os resultados completos dos exames até segunda ordem.
           </p>
         </article>
+
         <article className="document-card">
+          <span>REGISTRO INC-007 // FALHA DE VIGILÂNCIA (24/12)</span>
           <h3>Alarme de Contenção</h3>
 
           <p>
@@ -162,11 +175,15 @@ export default function Incidentes() {
           <br />
           <p>A origem da ativação permanece desconhecida.</p>
         </article>
-        <article className="document-card">
+
+        <article className="document-card corrupted-card">
+          <span>
+            ALERTA DE CORRUPÇÃO // PROTOCOLO DE AUDITORIA: 24/12 — ANEXO a
+          </span>
           <h3>Registro Perdido</h3>
 
           <p>Nenhum registro foi encontrado para esse incidente.</p>
-          <p>Login lvl 3: Ryan_Michael</p>
+          <p className="terminal-clue">Login lvl 3: Ryan_Michael</p>
           <br />
           <p>Quem é você Ryan?</p>
           <p>És tâo resistente, interessante...</p>

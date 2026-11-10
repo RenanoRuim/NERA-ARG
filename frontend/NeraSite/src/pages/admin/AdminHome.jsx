@@ -1,11 +1,14 @@
 export default function AdminHome() {
+  const nivel = Number(localStorage.getItem("nivelAcesso")) || 1;
+  const usuarioAtivo = localStorage.getItem("usuarioNera") || "OPERADOR_NERA";
+
   return (
     <section className="admin-section">
-      <h2>NERA DATABASE</h2>
+      <h2>NERA DATABASE // PAINEL OPERACIONAL</h2>
 
       <div className="document-grid">
         <article className="document-card">
-          <span>SYSTEM</span>
+          <span>SYSTEM // TERMINAL NERA-NET v4.02</span>
 
           <h3>Internal Database</h3>
 
@@ -64,7 +67,9 @@ export default function AdminHome() {
             segurança e confidencialidade será tratada com a máxima seriedade.
           </p>
         </article>
+
         <article className="document-card">
+          <span>ALERTA INTERNO // BIO-CONTENÇÃO</span>
           <h3>Incidente de Saúde</h3>
           <p>
             Em caso de incidente de saúde, siga o protocolo de emergência
@@ -91,6 +96,10 @@ export default function AdminHome() {
             contenção. Você precisa trabalhar para um mundo melhor, mas não se
             esqueça de que a segurança dos projetos é a sua maior prioridade.
           </p>
+          <br />
+          <div className="access-level">
+            SESSÃO ATIVA: {usuarioAtivo} // CLEARANCE NÍVEL {nivel}
+          </div>
         </article>
       </div>
     </section>

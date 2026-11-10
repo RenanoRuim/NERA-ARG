@@ -1,13 +1,16 @@
 import documento1 from "../../assets/documento1.jpg";
 import { useState } from "react";
+
 export default function Organismo() {
   const [documentoAberto, setDocumentoAberto] = useState(false);
+
   return (
     <section className="admin-section">
-      <h2>BIOLOGICAL DATABASE</h2>
+      <h2>BIOLOGICAL DATABASE // COMPLEXO AB-14</h2>
 
       <div className="document-grid">
         <article className="document-card">
+          <span>BIO-FILE 01 // COLETA ABISSAL</span>
           <h3>Origem</h3>
 
           <p>
@@ -20,7 +23,9 @@ export default function Organismo() {
             pesquisadores autorizados pelo Projeto TALASSA.
           </p>
         </article>
+
         <article className="document-card">
+          <span>BIO-FILE 02 // REATIVIDADE</span>
           <h3>Comportamento</h3>
 
           <p>
@@ -38,7 +43,9 @@ export default function Organismo() {
             utilizado.
           </p>
         </article>
+
         <article className="document-card">
+          <span>BIO-FILE 03 // RESPOSTA EPITELIAL</span>
           <h3>Regeneração</h3>
 
           <p>
@@ -56,7 +63,9 @@ export default function Organismo() {
             Os mecanismos responsáveis pelo processo permanecem desconhecidos.
           </p>
         </article>
+
         <article className="document-card">
+          <span>BIO-FILE 04 // AFINIDADE SELETIVA</span>
           <h3>Reação Biológica</h3>
 
           <p>
@@ -74,7 +83,9 @@ export default function Organismo() {
             humana ainda não foi determinada.
           </p>
         </article>
+
         <article className="document-card">
+          <span>BIO-FILE 05 // RESISTÊNCIA EXTREMA</span>
           <h3>Estabilidade</h3>
 
           <p>
@@ -94,24 +105,7 @@ export default function Organismo() {
         </article>
 
         <article className="document-card">
-          <h3>Estabilidade</h3>
-
-          <p>
-            A amostra apresenta elevada resistência a condições ambientais
-            adversas.
-          </p>
-          <br />
-          <p>
-            Alterações de temperatura, pressão e composição química não foram
-            suficientes para destruir sua estrutura.
-          </p>
-          <br />
-          <p>
-            Tentativas de desativação permanente permanecem sem resultados
-            conclusivos.
-          </p>
-        </article>
-        <article className="document-card">
+          <span>BIO-FILE 06 // PROTOCOLO DE ISOLAMENTO</span>
           <h3>Contenção</h3>
 
           <p>
@@ -129,7 +123,9 @@ export default function Organismo() {
             autorizados.
           </p>
         </article>
+
         <article className="document-card">
+          <span>BIO-FILE 07 // AVALIAÇÃO DE BIOSSEGURANÇA</span>
           <h3>Classificação de Risco</h3>
 
           <p>
@@ -148,7 +144,9 @@ export default function Organismo() {
             em qualquer circunstância.
           </p>
         </article>
+
         <article className="document-card">
+          <span>BIO-FILE 08 // TAXONOMIA ANÔMALA</span>
           <h3>Perigo</h3>
 
           <p>
@@ -168,12 +166,15 @@ export default function Organismo() {
             autorização são estritamente proibidas.
           </p>
         </article>
+
         <article
           className="document-card"
           onClick={() => setDocumentoAberto(true)}
         >
+          <span>ANEXO DIGITALIZADO // CLIQUE PARA AMPLIAR</span>
           <img src={documento1} alt="Documento 1" style={{ width: "100%" }} />
         </article>
+
         {documentoAberto && (
           <div
             className="documento-modal"

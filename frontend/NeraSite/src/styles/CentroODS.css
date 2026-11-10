@@ -1,0 +1,609 @@
+.edu-main {
+  width: 100%;
+}
+
+/* Cabeçalho Editorial / Arquivístico */
+.edu-masthead {
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--border-strong);
+  padding: 40px 24px;
+}
+
+.edu-masthead-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.edu-doc-index {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--teal-accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.edu-masthead h1 {
+  font-family: var(--serif);
+  font-size: 2.45rem;
+  color: var(--navy-deep);
+  margin-bottom: 14px;
+}
+
+.edu-lead {
+  font-size: 1.02rem;
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Caderno de Campo do Investigador */
+.edu-logbook-box {
+  background: var(--navy-deep);
+  color: #e6e3da;
+  border: 2px solid var(--border-strong);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.logbook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #334155;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: #38bdf8;
+}
+
+.logbook-empty {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.logbook-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+}
+
+.logbook-list li {
+  padding: 8px 10px;
+  background: rgba(56, 189, 248, 0.08);
+  border-left: 3px solid #34d399;
+  color: #e2e8f0;
+}
+
+.logbook-list li strong {
+  color: #34d399;
+}
+
+.logbook-footer {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #1e293b;
+}
+
+.logbook-login-link {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.logbook-login-link:hover {
+  text-decoration: underline;
+}
+
+/* Container Principal */
+.edu-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* Bancada de Simulação */
+.edu-workbench {
+  background: var(--card-bg);
+  border: 2px solid var(--border-strong);
+  box-shadow: var(--shadow);
+}
+
+.workbench-Header {
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--bg-alt);
+}
+
+.workbench-Header h2 {
+  margin: 4px 0 0;
+  font-size: 1.6rem;
+}
+
+.workbench-warning {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--amber-alert);
+  background: var(--amber-bg);
+  border: 1px solid var(--amber-alert);
+  padding: 4px 10px;
+}
+
+/* Abas dos 5 Módulos */
+.module-selector-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 2px solid var(--border-strong);
+  background: var(--bg);
+}
+
+.mod-tab {
+  padding: 16px 14px;
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--border);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  transition: background 0.15s ease;
+}
+
+.mod-tab:last-child {
+  border-right: none;
+}
+
+.mod-tab:hover {
+  background: var(--card-bg);
+}
+
+.mod-tab.active {
+  background: var(--navy-deep);
+  color: #ffffff;
+}
+
+.mod-num {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.mod-tab.active .mod-num {
+  color: #38bdf8;
+}
+
+.mod-tab strong {
+  font-family: var(--display);
+  font-size: 0.9rem;
+}
+
+.mod-solved-dot {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #10b981;
+  font-size: 0.9rem;
+}
+
+/* Palco do Módulo */
+.module-stage {
+  padding: 32px 28px;
+}
+
+.module-stage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.module-controls-col h3 {
+  font-size: 1.4rem;
+  margin: 6px 0 12px;
+}
+
+.module-pedagogy {
+  font-size: 0.9rem;
+  background: var(--bg);
+  border-left: 3px solid var(--teal-accent);
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.control-field {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.control-field label {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--navy-deep);
+}
+
+.control-field input[type="range"] {
+  width: 100%;
+  accent-color: var(--navy-deep);
+  cursor: pointer;
+}
+
+.control-field select,
+.cipher-solver-inline input {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  background: #ffffff;
+  border: 1px solid var(--border-strong);
+  color: var(--navy-deep);
+}
+
+.btn-execute-sim {
+  width: 100%;
+  padding: 13px 18px;
+  background: var(--navy-deep);
+  color: #ffffff;
+  border: none;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-execute-sim:hover {
+  background: var(--teal-accent);
+}
+
+/* Visor Científico */
+.hydro-visor {
+  background: #08121e;
+  color: #e2e8f0;
+  border: 2px solid var(--border-strong);
+  padding: 20px;
+}
+
+.hydro-visor.anomaly {
+  border-color: #ef4444;
+  background: #14090b;
+}
+
+.visor-top-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: #94a3b8;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.hydro-svg,
+.sonar-wave-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #1e293b;
+  margin-bottom: 16px;
+}
+
+.sim-output-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #334155;
+  padding: 16px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.sim-output-box.anomaly-box {
+  background: rgba(153, 27, 27, 0.16);
+  border-color: #ef4444;
+  color: #fecaca;
+}
+
+.sim-tip {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #38bdf8;
+  font-size: 0.82rem;
+}
+
+.unlocked-credential-banner {
+  margin-top: 14px;
+  padding: 12px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid #34d399;
+  color: #d1fae5;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+
+.unlocked-credential-banner code {
+  background: #042f2e;
+  color: #34d399;
+  border-color: #10b981;
+  font-weight: 700;
+}
+
+/* Módulo 2: Espectrômetro */
+.sample-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.sample-btn,
+.reagent-btn {
+  padding: 9px 10px;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.sample-btn.active,
+.reagent-btn.active {
+  background: var(--navy-deep);
+  color: #ffffff;
+  border-color: var(--navy-deep);
+}
+
+.reagent-buttons-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sample-explanation-card {
+  margin-top: 16px;
+  padding: 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.spectro-readout h4 {
+  color: #ffffff;
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.spectro-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.s-row {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #1e293b;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+}
+
+.s-row.highlight {
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.cipher-sequence-box {
+  margin: 12px 0;
+  padding: 12px;
+  background: #050a0f;
+  border: 1px solid #475569;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
+.cipher-sequence-box code {
+  display: block;
+  margin-top: 6px;
+  background: transparent;
+  border: none;
+  color: #fbbf24;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.cipher-solver-inline label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: #fca5a5;
+  margin-bottom: 6px;
+}
+
+.sonar-guide-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.danger-text {
+  color: var(--crimson-alert);
+  font-weight: 600;
+}
+
+/* Módulo 5: Tabela de Auditoria */
+.audit-table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid var(--border-strong);
+}
+
+.audit-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.audit-comparison-table th {
+  background: var(--navy-deep);
+  color: #ffffff;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 12px;
+  text-align: left;
+}
+
+.audit-comparison-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.audit-row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.audit-row:hover {
+  background: var(--bg);
+}
+
+.audit-row.selected {
+  background: rgba(180, 83, 9, 0.14);
+}
+
+.raw-tape-cell {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--crimson-alert);
+}
+
+.audit-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.audit-actions-row .btn-execute-sim {
+  width: auto;
+}
+
+.audit-error-msg {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--crimson-alert);
+}
+
+/* Seção de Reflexão e Vídeos da ODS-14 */
+.secao-reflexao-publica {
+  background: var(--card-bg);
+  border: 2px solid var(--border-strong);
+  padding: 36px 28px;
+  box-shadow: var(--shadow);
+}
+
+.reflexao-header {
+  max-width: 860px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.reflexao-header h2 {
+  font-size: 1.8rem;
+  margin: 8px 0 14px;
+}
+
+.reflexao-texto {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.ods-videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ods-video-card {
+  background: var(--navy-deep);
+  border: 1px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+}
+
+.ods-video-meta {
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: #cbd5e1;
+  border-bottom: 1px solid #1e293b;
+}
+
+.video-responsive {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .edu-masthead-inner,
+  .module-stage-grid,
+  .ods-videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-selector-tabs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .module-selector-tabs {
+    grid-template-columns: 1fr;
+  }
+}

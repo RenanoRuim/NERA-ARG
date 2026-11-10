@@ -1,41 +1,45 @@
 :root {
-  --text: #4a5568;
-  --text-h: #0f172a;
-  --bg: #f8fafc;
-  --card-bg: #ffffff;
-  --border: #e2e8f0;
-  --code-bg: #f1f5f9;
-  --accent: #0284c7;
-  --accent-bg: rgba(2, 132, 199, 0.1);
-  --shadow:
-    rgba(0, 0, 0, 0.08) 0 10px 15px -3px, rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
+  /* Identidade Editorial & Arquivística N.E.R.A. (Papel Técnico, Tinta Abissal & Instrumentação) */
+  --bg: #f2f0ea;
+  --bg-alt: #e6e3da;
+  --card-bg: #faf9f5;
+  --paper-warm: #f7f4eb;
+  --navy-deep: #08121e;
+  --navy-mid: #0e2034;
+  --navy-surface: #152d47;
+  --teal-accent: #005f73;
+  --teal-dark: #004656;
+  --cyan-signal: #38bdf8;
+  --amber-alert: #b45309;
+  --amber-bg: rgba(180, 83, 9, 0.1);
+  --crimson-alert: #991b1b;
+  --crimson-bg: rgba(153, 27, 27, 0.08);
 
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --text: #1e293b;
+  --text-muted: #52606d;
+  --text-h: #08121e;
+  --border: #b8b4a8;
+  --border-strong: #08121e;
+  --border-subtle: #d5d1c5;
+  --code-bg: #e5e1d6;
+
+  --shadow-sm: none;
+  --shadow: 4px 4px 0px rgba(8, 18, 30, 0.12);
+
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
 
   font-family: var(--sans);
   font-size: 16px;
-  line-height: 1.5;
-  color-scheme: light dark;
+  line-height: 1.6;
   color: var(--text);
   background-color: var(--bg);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #94a3b8;
-    --text-h: #f8fafc;
-    --bg: #0f172a;
-    --card-bg: #1e293b;
-    --border: #334155;
-    --code-bg: #1e293b;
-    --accent: #38bdf8;
-    --accent-bg: rgba(56, 189, 248, 0.15);
-    --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px;
-  }
-}
 *,
 *::before,
 *::after {
@@ -46,15 +50,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg);
+  background-image: radial-gradient(rgba(8, 18, 30, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
   color: var(--text);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 24px 16px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -62,21 +66,23 @@ body {
 
 h1,
 h2,
-h3 {
-  font-family: var(--sans);
+h3,
+h4 {
+  font-family: var(--serif);
   color: var(--text-h);
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 0;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 2.25rem;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
+  font-size: 2.4rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   letter-spacing: -0.01em;
 }
 
@@ -86,22 +92,16 @@ p {
 
 code {
   font-family: var(--mono);
-  font-size: 0.875rem;
-  padding: 4px 8px;
+  font-size: 0.84rem;
+  padding: 2px 6px;
   background: var(--code-bg);
-  border-radius: 6px;
+  border: 1px solid var(--border);
   color: var(--text-h);
 }
 
-#root {
-  padding: 16px 12px;
-}
-
-h1 {
-  font-size: 1.75rem;
-  margin-bottom: 16px;
-}
-
-h2 {
-  font-size: 1.25rem;
+.mono-tag {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

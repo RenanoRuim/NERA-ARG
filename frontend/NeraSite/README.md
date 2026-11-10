@@ -1,16 +1,40 @@
-# React + Vite
+# NERA — frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação React com Vite para o site institucional e o terminal ficcional da
+NERA, parte do ARG de *The Last Bunker*.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js compatível com a versão do Vite definida em `package.json`
+- Backend NERA em execução para login e notícias
 
-## React Compiler
+## Desenvolvimento
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm ci
+npm run dev
+```
 
-## Expanding the ESLint configuration
+O Vite informa no terminal o endereço local. Para validar o projeto:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```sh
+npm run lint
+npm run build
+```
+
+## Estrutura de `src`
+
+```text
+src/
+├── assets/       imagens e arquivos estáticos importados
+├── components/   cabeçalho, rodapé e notícias reutilizáveis
+├── pages/        páginas públicas e páginas do terminal administrativo
+│   └── admin/    áreas e controle de acesso do terminal NERA
+├── styles/       folhas de estilo associadas às páginas/componentes
+├── App.jsx       rotas da aplicação
+└── main.jsx      inicialização do React
+```
+
+O frontend chama o backend hospedado em `https://nera-arg.onrender.com`.
+Configure uma URL via variável de ambiente antes de separar ambientes local,
+homologação e produção.

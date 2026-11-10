@@ -5,7 +5,7 @@ export default function Pesquisadores() {
 
       <div className="document-grid">
         <article className="document-card">
-          <span>Pesquisador-Chefe #001</span>
+          <span>Pesquisador-Chefe #001 // ID: ECha_Para (Lab 52 / Sub 21)</span>
           <h3>Edgar Charles</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: DESCONHECIDO</h4>
@@ -30,7 +30,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisador #002</span>
+          <span>Pesquisador #002 // ANÁLISE CELULAR</span>
           <h3>Dr. Helena Vasconcelos</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: DESCONHECIDO</h4>
@@ -56,7 +56,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisador #003</span>
+          <span>Pesquisador #003 // ID: ManoDuar_22 (Setor Químico 22)</span>
           <h3>Dr. Manoel Duarte</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: ENCERRADO</h4>
@@ -80,7 +80,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisador #004</span>
+          <span>Pesquisador #004 // SISTEMAS DE CONTENÇÃO</span>
           <h3>Dr. Rafael Mendes</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: DESCONHECIDO</h4>
@@ -106,7 +106,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisadora #005</span>
+          <span>Pesquisadora #005 // CATALOGAÇÃO BIOLÓGICA</span>
           <h3>Camila Ferreira</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: INATIVO</h4>
@@ -129,7 +129,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisador #006</span>
+          <span>Pesquisador #006 // ENSAIOS IN VIVO</span>
           <h3>Dr. André Ribeiro</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: DESCONHECIDO</h4>
@@ -154,7 +154,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisadora #007</span>
+          <span>Pesquisadora #007 // ANÁLISE AMBIENTAL & EFLUENTES</span>
           <h3>Beatriz Almeida</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: DESLIGADA</h4>
@@ -181,7 +181,7 @@ export default function Pesquisadores() {
         </article>
 
         <article className="document-card">
-          <span>Pesquisador #008</span>
+          <span>Pesquisador #008 // ESTABILIZAÇÃO BIOESTRUTURAL</span>
           <h3>Dr. Lucas Moreira</h3>
           <h4>Projeto: TALASSA</h4>
           <h4>Status: DESCONHECIDO</h4>
@@ -202,8 +202,9 @@ export default function Pesquisadores() {
             foram classificados como confidenciais.
           </p>
         </article>
-        <article className="document-card">
-          <span>Pesquisador #09</span>
+
+        <article className="document-card corrupted-card">
+          <span>Pesquisador #09 // ARQUIVO REMOVIDO EM 24/12 (ANEXO a)</span>
 
           <h3>Registro Apagado</h3>
 
